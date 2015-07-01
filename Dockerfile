@@ -1,8 +1,8 @@
-FROM webhippie/minecraft-vanilla:1.11.2
+FROM webhippie/minecraft-vanilla:1.10.2
 MAINTAINER Thomas Boerger <thomas@webhippie.de>
 
-ENV MINECRAFT_VERSION 1.11.2
-ENV FORGE_VERSION 13.20.0.2214
+ENV MINECRAFT_VERSION 1.10.2
+ENV FORGE_VERSION 12.18.2.2183
 ENV FORGE_URL http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${FORGE_VERSION}/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 ENV FORGE_JAR forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
 
