@@ -1,6 +1,6 @@
 # Minecraft Forge
 
-[![](https://images.microbadger.com/badges/image/webhippie/minecraft-forge.svg)](https://microbadger.com/images/webhippie/minecraft-forge "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/webhippie/minecraft-forge:12.16.0.svg)](https://microbadger.com/images/webhippie/minecraft-forge:12.16.0 "Get your own image badge on microbadger.com")
 
 These are docker images for [Minecraft Forge](http://www.minecraftforge.net) running on a [Vanilla Minecraft](https://registry.hub.docker.com/u/webhippie/minecraft-vanilla/) container.
 
