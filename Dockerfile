@@ -15,7 +15,10 @@ ENV SERVER_RCONPWD webhippie
 ENV SERVER_DYNMAP true
 ENV JAVA_OPTS -server -XX:+UseConcMarkSweepGC
 
-RUN curl -o /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-${MINECRAFT_VERSION}-installer.jar ${FORGE_URL} 2> /dev/null && \
+RUN apk add paxctl && \
+  paxctl -c /usr/bin/java > /dev/null && \
+  paxctl -m /usr/bin/java && \
+  curl -o /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-${MINECRAFT_VERSION}-installer.jar ${FORGE_URL} 2> /dev/null && \
   cd /minecraft && \
   java -jar forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-${MINECRAFT_VERSION}-installer.jar --installServer && \
   rm -f /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-${MINECRAFT_VERSION}-installer.jar
