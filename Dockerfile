@@ -1,4 +1,4 @@
-FROM thiagohmoreira/minecraft-vanila:1.7.10
+FROM thiagohmoreira/minecraft-vanilla:1.7.10
 MAINTAINER Thomas Boerger <thomas@webhippie.de>
 
 ENV MINECRAFT_VERSION 1.7.10
